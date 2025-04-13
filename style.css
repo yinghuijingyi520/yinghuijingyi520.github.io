@@ -1,0 +1,90 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background: #fef9f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    margin-top: 50px;
+  }
+  
+  .couple-photo {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  h1 {
+    color: #d46a6a;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .date, .location {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .message {
+    margin: 30px 0;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .rsvp-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #d46a6a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .rsvp-button:hover {
+    background-color: #bb5757;
+  }
+  
+
+.view-invitation-button,
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #a88c7d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.view-invitation-button:hover,
+.back-button:hover {
+  background-color: #8d7466;
+}
+
+.invitation-photo {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}

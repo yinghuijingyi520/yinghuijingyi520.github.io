@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我们的婚礼邀请</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 背景音乐播放器 -->
+  <audio id="bg-music" src="bg-music.mp3" autoplay loop style="display: none;"></audio>
+
+  <div class="container">
+    <img src="couple.jpg" alt="我们的合照" class="couple-photo" />
+    
+    <h1>我们要结婚啦！</h1>
+    <h2>邹荧辉 & 林静怡</h2>
+    <p class="date">2025年5月20日</p>
+    <p class="location">翠园酒家(6521 八大道)</p>
+
+    <p class="message">请您见证我们的爱情与承诺，一同欢庆这个特别的日子！</p>
+    
+    <!-- 查看纸质请帖链接 -->
+    <a class="view-invitation-button" href="invitation.html">查看纸质请帖</a>
+
+    <!-- RSVP按钮 -->
+    <a class="rsvp-button" href="https://docs.google.com/forms/d/e/1FAIpQLSc_RVVdzCAiAbObLD8pdkoygXuqURtH2lfKFfMGgYttGjA7yQ/formResponse" target="_blank">请回复是否参加</a>
+  </div>
+
+  <script>
+    // 确保背景音乐能够在浏览器限制下自动播放
+    window.addEventListener('DOMContentLoaded', function () {
+      const music = document.getElementById('bg-music');
+      music.volume = 0.4; // 设置音量为40%
+      const playPromise = music.play();
+
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // 如果自动播放失败，在用户点击页面时播放
+          document.body.addEventListener('click', () => {
+            music.play();
+          }, { once: true });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
